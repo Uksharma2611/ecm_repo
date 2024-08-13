@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "postinstall": "chmod +x node_modules/.bin/concurrently",
+    "postinstall": "chmod +x node_modules/.bin/concurrently && chmod +x node_modules/.bin/nodemon && chmod +x client/node_modules/.bin/react-scripts",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix ./client",
