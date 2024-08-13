@@ -28,6 +28,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "postinstall": "chmod +x node_modules/.bin/concurrently && chmod +x node_modules/.bin/nodemon && [ -f client/node_modules/.bin/react-scripts ] && chmod +x client/node_modules/.bin/react-scripts || true",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
